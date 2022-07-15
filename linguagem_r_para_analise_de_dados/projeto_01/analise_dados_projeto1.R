@@ -1,6 +1,13 @@
-############################################
-###    EXPLORAÇÃO E ANÁLISE DOS DADOS    ###
-############################################
+
+#        ********************************************************
+#        *                                                      *
+#        *    EXPLORAÇÃO DOS DADOS EXPORTADOS ANTERIORMENTE     *
+#        *                                                      *
+#        ********************************************************
+
+# O objetivo desse código é explorar os dados que foram tratados na parte_1, a fim de visualizar como eles estão quando fazemos a
+# importação do arquivo de dados.
+
 
 # CARREGAR PACOTES
 library(dplyr)
@@ -198,11 +205,6 @@ summarise_at(covid_campinas, vars(obitos_novos, casos_novos), IQR)
 
 IQR(covid_guarulhos$obitos_novos)
 IQR(covid_guarulhos$casos_novos)
-
-
-
-
-
 
 
 
